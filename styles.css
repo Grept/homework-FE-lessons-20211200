@@ -1,1 +1,72 @@
 /*Maak hier jouw CSS!*/
+
+    /*MOBILE SCREEN VIEW*/
+.container{
+    padding: 16px;
+    display: grid;
+    background-color: darkkhaki;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 50px auto 50px 50px 50px 50px 50px;
+    grid-gap: 16px;
+    grid-template-areas:
+            "A"
+            "B"
+            "C"
+            "E"
+            "D"
+            "."
+            "F";
+
+}
+
+    /*NORMAL SCREEN VIEW*/
+@media screen and (min-width: 590px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 190px 100px auto 50px;
+        grid-template-areas:
+                "A C C"
+                "B C C"
+                "B E D"
+                "B E ."
+                "F F F";
+    }
+}
+
+.grid-item{
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#A{
+    grid-area: A;
+    background-color: #dd614a;
+}
+
+#B{
+    grid-area: B;
+    background-color: #f48668;
+}
+
+#C{
+    grid-area: C;
+    background-color: #f4a698;
+}
+
+#D{
+    grid-area: D;
+    background-color: #c5c392;
+}
+
+#E{
+    grid-area: E;
+    background-color: #73a580;
+}
+
+#F{
+    grid-area: F;
+    background-color: #80ad8c;
+}
