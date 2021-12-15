@@ -1,9 +1,10 @@
 /*Maak hier jouw CSS!*/
 
-    /*MOBILE SCREEN VIEW*/
-.container{
+/*MOBILE SCREEN VIEW*/
+.container {
+    background-color: #FFEFDB;
+    color: white;
     padding: 16px;
-    background-color: darkkhaki;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -17,12 +18,11 @@
             "D"
             "."
             "F";
-
 }
 
-    /*NORMAL SCREEN VIEW*/
-@media screen and (min-width: 590px){
-    .container{
+/*NORMAL SCREEN VIEW*/
+@media screen and (min-width: 590px) {
+    .container {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 50px 174px 100px auto 50px;
         grid-template-areas:
@@ -34,38 +34,35 @@
     }
 }
 
-.grid-item{
+.grid-item {
+    background-color: #BA3B46;
+    padding: 16px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#A{
+#A {
     grid-area: A;
-    background-color: #dd614a;
 }
 
-#B{
+#B {
     grid-area: B;
-    background-color: #f48668;
 }
 
-#C{
+#C {
     grid-area: C;
-    background-color: #f4a698;
 }
 
-#D{
+#D {
     grid-area: D;
-    background-color: #c5c392;
 }
 
-#E{
+#E {
     grid-area: E;
-    background-color: #73a580;
 }
 
-#F{
+#F {
     grid-area: F;
-    background-color: #80ad8c;
 }
